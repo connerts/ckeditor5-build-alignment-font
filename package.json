@@ -1,7 +1,7 @@
 {
   "name": "@ckeditor/ckeditor5-build-alignment-font",
-  "version": "12.4.0",
-  "description": "CKEditor 5 build with Alignment and Font.",
+  "version": "12.4.1",
+  "description": "CKEditor 5 build with Alignment, Font and Horizontal Line.",
   "keywords": [
     "ckeditor5-build",
     "ckeditor",
@@ -39,6 +39,7 @@
     "@ckeditor/ckeditor5-essentials": "^11.0.5",
     "@ckeditor/ckeditor5-font": "^11.2.2",
     "@ckeditor/ckeditor5-heading": "^11.0.5",
+    "@ckeditor/ckeditor5-horizontal-line": "^0.0.1",
     "@ckeditor/ckeditor5-image": "^14.0.0",
     "@ckeditor/ckeditor5-link": "^11.1.2",
     "@ckeditor/ckeditor5-list": "^12.1.0",
