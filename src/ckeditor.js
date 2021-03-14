@@ -29,6 +29,8 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
+import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -57,6 +59,8 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
+	TableProperties,
+	TableCellProperties
 ];
 
 // Editor configuration.
@@ -81,23 +85,25 @@ ClassicEditor.defaultConfig = {
 			'imageUpload',
 			'blockQuote',
 			'insertTable',
-			'mediaEmbed',
-		],
+			'mediaEmbed'
+		]
 	},
 	image: {
 		toolbar: [
 			'imageStyle:full',
 			'imageStyle:side',
 			'|',
-			'imageTextAlternative',
-		],
+			'imageTextAlternative'
+		]
 	},
 	table: {
 		contentToolbar: [
 			'tableColumn',
 			'tableRow',
 			'mergeTableCells',
-		],
+			'tableProperties',
+			'tableCellProperties'
+		]
 	},
 	fontFamily: {
 		options: [
@@ -109,8 +115,8 @@ ClassicEditor.defaultConfig = {
 			'Tahoma, Geneva, sans-serif',
 			'Times New Roman, Times, serif',
 			'Trebuchet MS, Helvetica, sans-serif',
-			'Verdana, Geneva, sans-serif',
-		],
+			'Verdana, Geneva, sans-serif'
+		]
 	},
 	fontSize: {
 		options: [
@@ -123,9 +129,9 @@ ClassicEditor.defaultConfig = {
 			16,
 			17,
 			19,
-			21,
-		],
+			21
+		]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en',
+	language: 'en'
 };
